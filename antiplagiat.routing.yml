@@ -1,0 +1,7 @@
+antiplagiat.main:
+  path: '/antiplagiat/{nid}'
+  defaults:
+    _controller: '\Drupal\antiplagiat\Controller\PageMain::page'
+    _title: 'АП'
+  requirements:
+    _permission: 'access content'
