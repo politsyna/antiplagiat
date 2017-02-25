@@ -5,3 +5,35 @@ antiplagiat.main:
     _title: 'АП'
   requirements:
     _permission: 'access content'
+
+antiplagiat.RobokassaResult:
+  path: '/robokassa/result'
+  defaults:
+    _controller: '\Drupal\antiplagiat\Controller\RobokassaResult::result'
+    _title: 'RobokassaResult'
+  requirements:
+    _permission: 'access content'
+
+antiplagiat.RobokassaSuccess:
+  path: '/robokassa/success'
+  defaults:
+    _controller: '\Drupal\antiplagiat\Controller\RobokassaSuccess::success'
+    _title: 'Статус оплаты:'
+  requirements:
+    _permission: 'access content'
+
+antiplagiat.RobokassaFail:
+  path: '/robokassa/fail'
+  defaults:
+    _controller: '\Drupal\antiplagiat\Controller\RobokassaFail::fail'
+    _title: 'Статус оплаты:'
+  requirements:
+    _permission: 'access content'
+
+antiplagiat.RobokassaCard:
+  path: '/robokassa/cart/{id}/{nid}'
+  defaults:
+    _controller: '\Drupal\antiplagiat\Controller\RobokassaCart::cart'
+    _title: 'RobokassaCart'
+  requirements:
+    _permission: 'access content'
